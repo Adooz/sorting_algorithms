@@ -6,11 +6,11 @@ void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
 
 /**
- * swapInts - Swap two integers in an array.
+ * swapInt - Swap two integers in an array.
  * @x: The first integer to swap.
  * @y: The second integer to swap.
  */
-void swapInts(int *x, int *y)
+void swapInt(int *x, int *y)
 {
 	int temp;
 
@@ -40,7 +40,7 @@ int lomuto_partition(int *array, size_t size, int low, int high)
 		{
 			if (above < below)
 			{
-				swapInts(array + below, array + above);
+				swapInt(array + below, array + above);
 				print_array(array, size);
 			}
 			above++;
